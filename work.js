@@ -7,6 +7,11 @@ function makeRows(rows, cols) {
     let cell = document.createElement("div");
     container.appendChild(cell).className = "grid-item";
   };
+  const mouseOverFunction = function () {
+    this.style.backgroundColor = 'blue';
+  };
+  
+  container.onmouseover = mouseOverFunction;  
 };
 
 makeRows(16, 16);
